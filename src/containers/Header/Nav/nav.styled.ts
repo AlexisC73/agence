@@ -7,9 +7,9 @@ export const NavDesktopStyled = styled.nav`
   position: fixed;
   inset: 0;
   scroll: no-scroll;
+  height: ${headerHight}px;
 
   ul {
-    padding: 120px 0;
     margin: 0;
     gap: 10px;
     display: flex;
@@ -65,9 +65,11 @@ export const NavDesktopStyled = styled.nav`
     }
   }
   &.active {
+    height: auto;
     ul {
       transform: translateX(0);
       transition: transform 400ms ease;
+      padding: 120px 0;
     }
   }
 
@@ -75,6 +77,9 @@ export const NavDesktopStyled = styled.nav`
     position: static;
     svg {
       display: none;
+    }
+    ul {
+      padding: 0;
     }
   }
 `

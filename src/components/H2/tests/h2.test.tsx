@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import H2 from '..'
 
-describe('Test du header', () => {
+describe('Test h2', () => {
   it('Should render components', () => {
     render(<H2>Titre</H2>)
     expect(screen.getByText('Titre')).toBeInTheDocument()

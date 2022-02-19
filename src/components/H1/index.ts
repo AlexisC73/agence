@@ -1,7 +1,10 @@
 import styled from 'styled-components'
-import { highTitleSize } from '../../utils/variable'
+import { highTitleSize, tabletWidth, veryHighTitle } from '../../utils/variable'
 
-const H1Styled = styled.h1`
+const H1 = styled.h1`
   font-size: ${highTitleSize}rem;
+  @media screen and (min-width: ${tabletWidth}px) {
+    font-size: ${veryHighTitle}rem;
+  }
 `
-export default H1Styled
+export default H1

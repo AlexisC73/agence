@@ -6,7 +6,6 @@ import { NavDesktopStyled } from './nav.styled'
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false)
   const toggleMenu = () => {
-    console.log('click')
     setMenuOpen(!menuOpen)
   }
   return (

@@ -1,12 +1,12 @@
 import { render, screen } from '@testing-library/react'
-import H1 from '../'
+import Button from '../'
 
-describe('Test h1', () => {
+describe('Test button', () => {
   it('Should render components', () => {
-    render(<H1>Titre</H1>)
+    render(<Button>Titre</Button>)
     expect(screen.getByText('Titre')).toBeInTheDocument()
   })
   it('should render component with empty text', () => {
-    render(<H1></H1>)
+    render(<Button></Button>)
   })
 })

@@ -3,6 +3,8 @@ import { colorPrimary, headerHight } from '../../utils/variable'
 
 const HeaderStyled = styled.header`
   background-color: ${colorPrimary};
+  position: fixed;
+  width: 100%;
   height: ${headerHight}px;
   display: flex;
   justify-content: center;

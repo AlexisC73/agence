@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import Header from '../'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-describe('Test du header', () => {
+describe('Test header', () => {
   it('Should render header', () => {
     render(
       <Router>
